@@ -1,7 +1,11 @@
 #pragma once
 
-#include "game.hpp"
 #include <functional>
+#include <memory>
+
+// forward decls
+class Game;
+
 class Condition {
 public:
   std::function<bool(Game)> f;

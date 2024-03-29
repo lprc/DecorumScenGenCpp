@@ -10,4 +10,6 @@ public:
   std::unique_ptr<Object> lamp;
   std::unique_ptr<Object> curiosity;
   std::unique_ptr<Object> painting;
+
+  friend std::ostream &operator<<(std::ostream &os, const Room &r);
 };
